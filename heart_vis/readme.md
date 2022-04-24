@@ -1,14 +1,5 @@
 <div id="top"></div>
 
-
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -45,7 +36,6 @@
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -57,26 +47,27 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+This Blender-Python workflow was used to create the 3D models used throughout the paper:
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+(Dileep, Syed, et al. _in Review_)
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+<div id="refs" class="references csl-bib-body hanging-indent">
 
-Use the `BLANK_README.md` to get started.
+<div id="ref-xie2018" class="csl-entry">
+
+Drisya Dileep, Tabish Syed,  Tyler Sloan, Dhandapany Perundurai, Kaleem Siddiqi, and Minhajuddin Sirajuddin. 202X. *Myofiber reconstruction at micron scale reveals longitudinal bands in heart ventricular walls*.
+
+The scripts used to generate the 3D models are assembled into this module.
+
+</div>
+
+</div>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-
 ### Built With
-
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
 * [Blender](https://blender.org/)
 * [Python](https://python.org/)
@@ -84,13 +75,10 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Blender come with its own Python installation, the version of which depends on the Blender release. This Python installation is independent of the system Python installation, and so installing packages to the correct Python can be tricky. The Python included with Blender contains several useful packages already, such as NumPy. However, for more advanced usage, one will need to install additional Python packages to the Blender Python installation. A comprehensive tutorial on how to do this is beyond the scope of this paper.
 
 ### Prerequisites
 
@@ -115,7 +103,7 @@ pip install r- path/to/requirements.txt
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+_Setting up Blender is straightforward, as is loading and running a Python script from Blender's 'Scripting' window. However, ensuring any additional Python packages are installed and available to Blender's Python installation is much trickier._
 
 1. Download a recent version of [Blender](https://blender.org)
 2. Clone the repo
@@ -124,10 +112,8 @@ _Below is an example of how you can instruct your audience on installing and set
    ```
 3. Location your Blender installation, and navigate to Blender's Python installation. It should be found at MyDrive/Program Files/Blender Foundation/Blender/X.X/python/bin
 
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+4. Open system console and navigate to the folder containing your version of Blender's Python installation.
+From this folder, ensure that pip is installed, and use pip to install necessary packages to Blenders Python installation.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -136,9 +122,9 @@ _Below is an example of how you can instruct your audience on installing and set
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Once Blender is loaded, navigate to the 'Scripting' tab, and load a script from file. Navigate to the folder containing this module, and open main.py.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+main.py loads the necessary scripts and functions from the module, and builds the model according to the parameters in config.py
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -150,10 +136,6 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [x] Clean code and publish to Git
 - [x] Add License
 - [ ] Upload .blend template
-- [ ]
-
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -173,7 +155,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Your Name - [@quorumetrix](https://twitter.com/quorumetrix) - tyler@quorumetrix.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/Quorumetrix/Dileep_Syed_et_al](https://github.com/Quorumetrix/Dileep_Syed_et_al)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -181,8 +163,6 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 
 * [The Blender Foundation](https://https://www.blender.org/)
 * [scikit-image](https://https://scikit-image.org/)
