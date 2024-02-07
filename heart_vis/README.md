@@ -38,8 +38,8 @@ This Blender-Python workflow was used to create the 3D models used throughout th
 <div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-xie2018" class="csl-entry">
 
-Drisya Dileep, Tabish Syed,  Tyler Sloan, Dhandapany Perundurai, Kaleem Siddiqi, and Minhajuddin Sirajuddin. 202X. *Micron scale ex-vivo heart imaging and computer vision reveal a distinct long-axis fiber continuum in the ventricular walls*.
-
+Drisya Dileep, Tabish Syed,  Tyler Sloan, Dhandapany Perundurai, Kaleem Siddiqi, and Minhajuddin Sirajuddin. 2023. *Cardiomyocyte orientation recovery at micrometer scale reveals long‐axis fiber continuum in heart walls*.
+EMBO J (2023) 42: e113288 https://doi.org/10.15252/embj.2022113288
 The scripts used to generate the 3D models are assembled into this module.
 
 </div>
